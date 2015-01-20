@@ -1,0 +1,147 @@
+cd MyDataScienceToolbox
+
+vagrant ssh (if vagrant is already running)
+vagrant reload (if you need to restart your virtual machine)
+vagrant up (if vagrant is not running yet)
+
+cd MyDataScienceToolbox
+vagrant up
+vagrant ssh
+
+GUI programs are accessible and easy to use but difficult to record what you did so others can do it too
+
+A shell is the program that displays the command line, default on OSX is bash
+Arrow keys go through your history
+Tab key will complete names and commands
+
+
+pwd will tell you which directory pathway you’re in
+ls will tell you which files are there
+cd .. will take you up a level in the directory
+cd ~/ will take you to your home directory
+
+cd introscicomp2014
+
+mkdir makes a directory
+rmdir removes a directory
+
+cp copies files
+touch makes a new empty file (ex: touch file1.txt)
+
+Making a new file and copying it into a different directory:
+touch file1.txt (made in a directory called Sandbox)
+mkdir latlon
+cd latlon to get to the new directory
+cd .. to go up to the next directory
+cp ../file1.txt ./ (two dots tells it to look up to the next directory, then you tell it which file to copy, then a single dot and slash tells it to look at the present directory)
+
+or if you’re already in the right directory
+cp file1.txt latlon
+
+mv moves a file
+mv file1.txt latlon (moves the file to the directory latlon)
+
+optional arguments
+ls –l will show more info with ls
+
+less lets you peak at text files (ex: less file1.txt)
+
+cd ../Data (goes up a directory but back to Data within that directory)
+
+man ls tells you how ls works
+
+man is like the help command
+
+wild cards:
+ ls *.txt
+
+Nano text editor in Unix:
+Nano mynewfile.txt
+Control X to exit (gives you the option to save)
+
+
+More Unix shortcuts…
+
+Redirection
+> sends output to a file
+>> appends output to a file
+
+Pipes
+Sends output of one program to another
+
+To see your work history: history 
+CTRL+L clears just the screen
+
+To make a bunch of files at once, just list them: touch file1.txt file2.txt file3.txt
+
+Wildcards
+* matches all characters
+? matches any single character
+
+Grep to search for matches in a file and print them out
+
+Find
+Find . -name “yourfile” to find by name
+
+Xargs
+
+
+Test Files
+Have columns and lines
+Delimited/separated by commas or tabs
+
+Text editors
+
+
+Regular expressions – think of regex as a super powerful search and replace
+
+Capture all of the line first,
+Then work with parentheses to designate what to replace with (like placeholders)
+
+Wildcards:
+\w matches any single letter, digit and underscore
+\w+ matches all following letters
+\d matches any digit
+
+Parentheses capture parts of original text and create replacement text
+Ex: (\w)(\w+)   the first parentheses is designated as 1, the second as 2 for replacement, so \1\2
+The plus after the \w means to include all letters past the second letter
+
+\ can be used to search for special characters
+Example: \_ or \\ or \.
+
+\t   tabs
+\s   white space (spaces, tabs, end of line)
+\r, \n   ends of lines
+
+custom character sets inside [ ]
+
+
+Version control logs every step
+Backups with history
+Easier collaboration
+
+Version control with git
+Git is the dump content tracker
+Setting up git…
+ls –a to see all files in your git directory
+nano (new file name)
+git status
+git add (file name)
+git commit
+git log
+a branch is a pointer to the current commit
+git branch testing
+git branch
+git checkout master
+HEAD tells you where you currently are
+git checkout testing
+git merge testing
+git log –graph
+avoid working on master
+
+github.com
+
+
+ 
+
